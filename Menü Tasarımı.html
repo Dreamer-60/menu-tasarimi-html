@@ -1,0 +1,203 @@
+<html>
+   <head>
+       <title>CSS Menu Tasarımı</title>
+         <style type="text/css">       
+           * {
+      	      margin:0;
+	      padding:0;
+           }
+           .menu {
+	     width:500px;
+	     margin:0 auto;
+	     margin-top:10px;
+	     background-color:#78909C;
+          }
+          .menu ul {
+	     display:block;
+	     margin:0;
+	     text-align:center;
+	     padding:0;
+         }
+         .menu ul li {
+	     list-style:none;
+	     display:inline-block;
+         }
+         .menu ul li a {
+	     display:block;
+	     background-color:#78909C;
+	     color:white;
+	     font-size:15px;
+	     padding:20px 20px;
+	     text-decoration:none;
+	     font-family:'Lucida Calligraphy';
+         }
+         .menu ul li a:hover {
+	     background-color:#FFAB40;
+         }
+         .menu ul li ul {
+	      display:none;
+	      position:absolute;
+	      background-color:#FFAB40;
+	      width:200px;
+         }
+         .menu ul li ul li {
+	      display:block;
+         }
+         .menu ul li:hover > a {
+	      background-color:#FFAB40;
+         }
+         .menu ul li ul li a {
+	      background-color:#FFAB40;
+	      text-align:match-parent;
+         }
+         .menu ul li ul li a:hover {
+	      background-color:#78909C;
+         }
+         .menu ul li:hover ul {
+	      display:block;
+         }
+         body {
+              background-image:url("thumb-1920-757225.jpg");
+         }
+         h1{
+              position:absolute;
+              right:350px;
+              top:320px;
+              color:white;
+              font-family:'Lucida Calligraphy';
+              text-shadow:2px 2px;
+              font-size:70px;
+           }
+         .container {
+             position: absolute;
+             left:5%;
+             top:20%;
+             width:50%;
+         }
+         .image {
+             display: block;
+             width: 30%;
+             height: auoto;
+         }
+         .overlay {
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             right: 0;
+             background-color:#FCE4EC;
+             overflow: hidden;
+             width: 30%;
+             height: 0;
+             transition: .5s ease;
+        }
+        .container:hover .overlay {
+             height: 100%;
+        }
+        .text {
+             white-space: nowrap; 
+             color: black;
+             font-size: 15px;
+             position: absolute;
+             overflow: hidden;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+          .container2 {
+               position: absolute;
+               left:80%;
+               top:20%;
+                width:50%;
+          }
+          .image2 {
+                display: block;
+                width: 30%;
+                height: auto;
+          }
+          .overlay2 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color:#FCE4EC;
+                overflow: hidden;
+                width: 30%;
+                height: 0;
+                transition: .5s ease;
+           }
+           .container2:hover .overlay2 {
+                 height: 100%;
+            }
+            .text2 {
+                 white-space: nowrap; 
+                 color: black;
+                 font-size: 12px;
+                 position: absolute;
+                 overflow: hidden;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+            }
+           
+         </style>
+     </head>
+  <body>
+    <div class="menu">
+    <ul>
+            <li><a href="#">ANASAYFA</a></li>
+            <li>
+                <a href="#">HAKKIMIZDA</a>
+                <ul>
+                    <li><a href="#">Kuruluşumuz</a></li>
+                    <li><a href="#">Kadromuz</a></li>
+                    <li><a href="#">Şubelerimiz</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">MARKALAR</a>
+                <ul>
+                    <li><a href="#">Mercedes-Benz</a></li>
+                    <li><a href="#">Volkswagen</a></li>
+                    <li><a href="#">BMW</a></li>
+                    <li><a href="#">Audi</a></li>
+                    <li><a href="#">Volvo</a></li>
+                    <li><a href="#">Devamı İçin Tıklayınız..</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">FİYAT LİSTESİ</a>
+                <ul>
+                    <li><a href="#">Kampanyalar</a></li>
+                    <li><a href="#">Sıfırlar İçin Fiyatlar</a></li>
+                    <li><a href="#">İkinci El İçin Fiyatlar</a></li>
+                    <li><a href="#">Devamı İçin Tıklayınız..</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">İLETİŞİM</a>
+                <ul>
+                    <li><a href="#">Telefon Numaraları</a></li>
+                    <li><a href="#">E-posta</a></li>
+                    <li><a href="#">Fax</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        </div>
+      <h1>HOŞGELDİNİZ....</h1>
+<div class="container">
+  <img src="Maserati-GranTurismo-Back-iPhone-6-Plus-HD-Wallpaper.jpg" alt="CARS" class="image">
+  <div class="overlay">
+    <div class="text">EN BEĞENİLENLER</div>
+  </div>
+</div>
+     <div class="container2">
+  <img src="4a21f505af89f3b0e7f70e43ffc02b5c.jpg" alt="CARS" class="image2">
+  <div class="overlay2">
+    <div class="text">TERCİHLERİMİZ</div>
+  </div>
+</div>
+   </body>
+</html>
